@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "creation": "2023-12-30 16:11:14.566526",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "username",
+  "first_name",
+  "folder",
+  "section_break_2i1vf",
+  "last_name",
+  "amended_from",
+  "geo",
+  "json",
+  "description",
+  "desc"
+ ],
+ "fields": [
+  {
+   "fieldname": "username",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Username",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "User Details",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "folder",
+   "fieldtype": "Fold",
+   "label": "folder"
+  },
+  {
+   "fieldname": "section_break_2i1vf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "geo",
+   "fieldtype": "Geolocation",
+   "label": "geo"
+  },
+  {
+   "fieldname": "json",
+   "fieldtype": "JSON",
+   "label": "json"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Markdown Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "desc",
+   "fieldtype": "Text Editor",
+   "label": "desc"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-12-30 16:59:45.118278",
+ "modified_by": "Administrator",
+ "module": "Training App",
+ "name": "User Details",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
